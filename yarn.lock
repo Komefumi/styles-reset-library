@@ -5,6 +5,14 @@ __metadata:
   version: 5
   cacheKey: 8
 
+"@mental-rebuilders/styles-reset-library@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@mental-rebuilders/styles-reset-library@workspace:."
+  dependencies:
+    less: ^4.1.2
+  languageName: unknown
+  linkType: soft
+
 "copy-anything@npm:^2.0.1":
   version: 2.0.3
   resolution: "copy-anything@npm:2.0.3"
@@ -160,14 +168,6 @@ __metadata:
   checksum: 3bca2db0479fd38f8c4c9439139b0c42dcaadcc2fbb7bb8e0e6afaa1383457f1d19aea9e5f961d5b080f1cfc05bfa1fe9e45c97a1d3fd6d421950a73d3108381
   languageName: node
   linkType: hard
-
-"root-workspace-0b6124@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "root-workspace-0b6124@workspace:."
-  dependencies:
-    less: ^4.1.2
-  languageName: unknown
-  linkType: soft
 
 "safer-buffer@npm:>= 2.1.2 < 3":
   version: 2.1.2

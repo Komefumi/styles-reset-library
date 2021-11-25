@@ -19,14 +19,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],
     "dependencyTreeRoots": [
       {
-        "name": "root-workspace-0b6124",
+        "name": "@mental-rebuilders/styles-reset-library",
         "reference": "workspace:."
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.{1,2}(?:\\/|$))(?:(?:(?!(?:^|\\/)\\.{1,2}(?:\\/|$)).)*?)|$))$)",
     "fallbackExclusionList": [
-      ["root-workspace-0b6124", ["workspace:."]]
+      ["@mental-rebuilders/styles-reset-library", ["workspace:."]]
     ],
     "fallbackPool": [
     ],
@@ -35,6 +35,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["less", "npm:4.1.2"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@mental-rebuilders/styles-reset-library", [
+        ["workspace:.", {
+          "packageLocation": "./",
+          "packageDependencies": [
+            ["@mental-rebuilders/styles-reset-library", "workspace:."],
             ["less", "npm:4.1.2"]
           ],
           "linkType": "SOFT",
@@ -205,16 +215,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prr", "npm:1.0.1"]
           ],
           "linkType": "HARD",
-        }]
-      ]],
-      ["root-workspace-0b6124", [
-        ["workspace:.", {
-          "packageLocation": "./",
-          "packageDependencies": [
-            ["root-workspace-0b6124", "workspace:."],
-            ["less", "npm:4.1.2"]
-          ],
-          "linkType": "SOFT",
         }]
       ]],
       ["safer-buffer", [

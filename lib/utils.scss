@@ -21,11 +21,11 @@
 }
 
 .link-reset-block {
-  .link-reset();
+  @extend .link-reset;
   display: block;
 }
 
 .link-reset-flex {
-  .link-reset();
+  @extend .link-reset;
   display: flex;
 }

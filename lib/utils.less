@@ -10,3 +10,22 @@
     border: none;
     padding: 11.2px 16px 9.6px;
 }
+
+.link-reset {
+  color: currentColor;
+  text-decoration: none;
+
+  &:active, &:hover, &:visited {
+    color: currentColor;
+  }
+}
+
+.link-reset-block {
+  .link-reset();
+  display: block;
+}
+
+.link-reset-flex {
+  .link-reset();
+  display: flex;
+}

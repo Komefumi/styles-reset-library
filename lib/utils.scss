@@ -1,34 +1,27 @@
-:global {
-  .reset-inner-list {
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-    }
-  }
-
-  .btn {
-    border: none;
-    padding: 11.2px 16px 9.6px;
-  }
-
-  .link-reset {
-    color: currentColor;
-    text-decoration: none;
-
-    &:active, &:hover, &:visited {
-      color: currentColor;
-    }
-  }
-
-  .link-reset-block {
-    @extend .link-reset;
-    display: block;
-  }
-
-  .link-reset-flex {
-    @extend .link-reset;
-    display: flex;
+@mixin reset-inner-list {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   }
 }
 
+@mixin make-clear-button {
+  border: none;
+  background-color: transparent;
+}
+
+@mixin reset-link($now, $active, $hover, $visited) {
+  color: $now;
+  text-decoration: none;
+
+  &:active {
+    color: $active;
+  }
+  &:hover {
+    color: $hover;
+  }
+  &:visited {
+    color: $visited;
+  }
+}

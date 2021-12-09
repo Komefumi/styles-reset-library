@@ -1,6 +1,7 @@
 {
   "packageManager": "yarn@3.1.0",
   "devDependencies": {
+    "prettier": "^2.5.1",
     "sass": "^1.43.5"
   },
   "name": "@mental-rebuilders/styles-reset-library",

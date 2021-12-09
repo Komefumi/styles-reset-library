@@ -25,3 +25,78 @@
     color: $visited;
   }
 }
+
+@mixin center-children {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin center-children-be-column {
+  @include center-children();
+  flex-direction: column;
+}
+
+@mixin clear-reset-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+@import "@fontsource/princess-sofia";
+@import "@fontsource/shanti";
+*/
+
+@mixin fontize($font-family) {
+  font-family: $font-family;
+}
+
+/*
+@mixin sofiafy() {
+  @include fontize("Princess Sofia");
+}
+
+@mixin shantify() {
+  @include fontize("Shanti");
+}
+*/
+
+@mixin turn-into-heading($font-size-magnitude) {
+  font-size: #{$font-size-magnitude}px;
+  font-weight: 500;
+}
+
+@mixin for-headings-up-to($upto-count) {
+  @for $i from 1 through #{$upto-count} {
+    h#{$i} {
+      @content;
+    }
+  }
+}
+
+@mixin bottom-rule-when-margin-isnt-enough(
+  $push-down,
+  $rule-width,
+  $rule-height,
+  $rule-color
+) {
+  position: relative;
+  margin-bottom: $push-down * 2;
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + $push-down);
+    left: 0;
+    width: 100%;
+    height: $rule-height;
+    background-color: $rule-color;
+  }
+}
+
+/*
+@mixin default-bottom-rule {
+  @include bottom-rule-when-margin-isnt-enough(1rem, 100%, 3px, #aaa);
+}
+*/
